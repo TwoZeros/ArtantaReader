@@ -1,0 +1,46 @@
+﻿<Window x:Class="ComPortApplication.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ComPortApplication"
+        mc:Ignorable="d"
+        Title="Artanta" Height="404" Width="493.5">
+    <Grid HorizontalAlignment="Right" Width="486" Margin="0,-1,0,1">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="335*"/>
+            <ColumnDefinition Width="153*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.Background>
+            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                <GradientStop Color="#FFF6FBFB" Offset="0.008"/>
+                <GradientStop Color="#FFBFC1C1" Offset="1"/>
+            </LinearGradientBrush>
+        </Grid.Background>
+        <Label x:Name="label" Content="Выбор порта" HorizontalAlignment="Left" Margin="38,29,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.5,0.5" Width="89" Height="27">
+            <Label.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform AngleY="-0.352"/>
+                    <RotateTransform/>
+                    <TranslateTransform Y="0.172"/>
+                </TransformGroup>
+            </Label.RenderTransform>
+        </Label>
+        <ComboBox x:Name="ListPort" HorizontalAlignment="Left" Margin="20,55,0,0" VerticalAlignment="Top" Width="120" SelectionChanged="ListPort_SelectionChanged"/>
+        <Button x:Name="OpenPort" Content="Открыть" HorizontalAlignment="Left" Margin="178,58,0,0" VerticalAlignment="Top" Width="75" Height="30" IsDefault="True" Click="OpenPort_Click"/>
+        <Button x:Name="ClosePort" Content="Закрыть" HorizontalAlignment="Left" Margin="177,101,0,0" VerticalAlignment="Top" Width="75" Height="25" OpacityMask="Black" Click="ClosePort_Click"/>
+        <Label x:Name="label1" Content="Код для отправки" HorizontalAlignment="Left" Margin="154,190,0,0" VerticalAlignment="Top" Width="121" Cursor="None"/>
+        <TextBox x:Name="InputBox" HorizontalAlignment="Left" Height="41" Margin="134,216,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="152" Opacity="0.8" BorderThickness="1,2"/>
+        <TextBlock x:Name="Status_Controller" HorizontalAlignment="Left" Margin="310,138,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="214" Width="161" Background="#FFF3F2F2" Opacity="0.7" Grid.ColumnSpan="2"/>
+        <Label x:Name="label2" Content="Ответ устройста" HorizontalAlignment="Left" Margin="4,108,0,0" VerticalAlignment="Top" Width="101" Grid.Column="1"/>
+        <Button x:Name="Send" Content="Отправить" HorizontalAlignment="Left" Margin="220,269,0,0" VerticalAlignment="Top" Width="66" Height="29" Click="Send_Click"/>
+        <Button x:Name="Clear" Content="Очистить" HorizontalAlignment="Left" Margin="134,270,0,0" VerticalAlignment="Top" Width="66" Height="28"/>
+        <ScrollViewer HorizontalAlignment="Left" Height="211" Margin="119,139,0,0" VerticalAlignment="Top" Width="17" Grid.Column="1"/>
+        <Label x:Name="label3" Content="Скорость" HorizontalAlignment="Left" Margin="48,82,0,0" VerticalAlignment="Top"/>
+        <ComboBox x:Name="SpeedPort" HorizontalAlignment="Left" Margin="20,108,0,0" VerticalAlignment="Top" Width="120"/>
+        <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="136" Margin="6,4,0,0" VerticalAlignment="Top" Width="268" Panel.ZIndex="-5"/>
+        <Label x:Name="label4" Content="Настройка порта" HorizontalAlignment="Left" Margin="140,7,0,0" VerticalAlignment="Top" Width="131" FontSize="14.667"/>
+
+    </Grid>
+</Window>

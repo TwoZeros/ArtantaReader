@@ -1,0 +1,14 @@
+G:\Artanta\ComPortApplication\bin\Debug\ComPortApplication.exe.config
+G:\Artanta\ComPortApplication\bin\Debug\ComPortApplication.exe
+G:\Artanta\ComPortApplication\bin\Debug\ComPortApplication.pdb
+G:\Artanta\ComPortApplication\obj\Debug\ComPortApplication.csprojResolveAssemblyReference.cache
+G:\Artanta\ComPortApplication\obj\Debug\MainWindow.g.cs
+G:\Artanta\ComPortApplication\obj\Debug\App.g.cs
+G:\Artanta\ComPortApplication\obj\Debug\ComPortApplication_MarkupCompile.cache
+G:\Artanta\ComPortApplication\obj\Debug\ComPortApplication_MarkupCompile.lref
+G:\Artanta\ComPortApplication\obj\Debug\MainWindow.baml
+G:\Artanta\ComPortApplication\obj\Debug\ComPortApplication.g.resources
+G:\Artanta\ComPortApplication\obj\Debug\ComPortApplication.Properties.Resources.resources
+G:\Artanta\ComPortApplication\obj\Debug\ComPortApplication.csproj.GenerateResource.Cache
+G:\Artanta\ComPortApplication\obj\Debug\ComPortApplication.exe
+G:\Artanta\ComPortApplication\obj\Debug\ComPortApplication.pdb
